@@ -30,6 +30,8 @@ module.exports = {
         //排除node_modules
         exclude: /node_modules/,
       },
+
+      //设置less文件的处理
     ],
   },
 
