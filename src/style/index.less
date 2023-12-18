@@ -1,3 +1,49 @@
+//设置变量
+@bg-color: #b7d4ba;
+
+* {
+  margin: 0;
+  padding: 0;
+  //改变盒子模型的计算方式
+  box-sizing: border-box;
+  font: bold 20px "Microsoft YaHei";
+}
+
+//设置主窗口的样式
+#main {
+  width: 360px;
+  height: 420px;
+  background-color: @bg-color;
+  //设置居中
+  margin: 100px auto;
+  border: 10px solid black;
+  //设置圆角
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  #stage {
+    width: 304px;
+    height: 304px;
+    border: 2px solid black;
+
+    设置蛇的样式
+  }
+
+  //flex情况下垂直居中
+  #score-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+html,
 body {
-  background-color: #bfa;
+  width: 100%;
+  height: 100%;
 }
