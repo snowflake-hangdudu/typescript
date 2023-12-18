@@ -32,6 +32,30 @@ module.exports = {
       },
 
       //设置less文件的处理
+      {
+        test: /\.less$/,
+        use: ["style-loader", "css-loader", 
+        //引入postcss配置
+        {
+          loader: "postcss-loader",
+          options: {
+            postcssOptions: {
+              plugins: [
+                [
+                  "postcss-preset-env",
+                  {
+                    // 其他选项
+                    browsers: "last 2 versions",
+                  },
+                ],
+              ],
+            },
+          },
+          
+
+        },
+        "less-loader"],
+      },
     ],
   },
 
