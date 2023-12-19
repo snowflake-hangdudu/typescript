@@ -48,8 +48,6 @@ class GameControl {
     this.snake.Y = Y;
 
     //开启一个定时调用
-    this.isLive &&
-      setTimeout(this.run.bind(this), 300 - (this.scorePanel.level - 1) * 30);
   }
 }
 
